@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Learn Vue Js</title>
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Learn Vue Js</h1>
+
+      <div id="app1">
+          <h2>{{message}}</h2>
+          <br>
+          <button v-on:click="viewOneMore">What you learned? </button>
+          <br><br>
+          <input type="text" id="lessonLearned">
+          <button v-on:click="addLesson">add to leaned</button>
+          <br>
+          <ol id="learnedList">
+            <li v-for="item in displayList"> {{item}} </li>
+          </ol>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+      <script src="./handler.js"></script>
+  </body>
+</html>
